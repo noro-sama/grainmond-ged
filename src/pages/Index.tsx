@@ -9,17 +9,53 @@ import cleaningImg from "@/assets/product-cleaning.jpg";
 import ProductCard from "@/components/ProductCard";
 
 const features = [
-  { icon: Shield, title: "Reliable Supply", text: "We deliver quality products you can depend on." },
-  { icon: Package, title: "Wide Product Range", text: "Multiple products available from one trusted supplier." },
-  { icon: Users, title: "Professional Service", text: "Our team is committed to excellent customer support." },
-  { icon: Handshake, title: "Trusted Partner", text: "We focus on long-term relationships with our clients." },
+  {
+    icon: Shield,
+    title: "Reliable Supply",
+    text: "We deliver quality products you can depend on.",
+  },
+  {
+    icon: Package,
+    title: "Wide Product Range",
+    text: "Multiple products available from one trusted supplier.",
+  },
+  {
+    icon: Users,
+    title: "Professional Service",
+    text: "Our team is committed to excellent customer support.",
+  },
+  {
+    icon: Handshake,
+    title: "Trusted Partner",
+    text: "We focus on long-term relationships with our clients.",
+  },
 ];
 
 const previewProducts = [
-  { title: "Office Furniture & Stationery", description: "Modern office desks, chairs, cabinets, and everyday office supplies.", image: officeImg },
-  { title: "IT Equipment", description: "Computers, printers, networking equipment, and office technology solutions.", image: itImg },
-  { title: "Food Supplies", description: "Beans, rice, kapenta, soya beans, and other essential food products.", image: foodImg },
-  { title: "Cleaning Supplies", description: "Mops, brooms, detergents, disinfectants, and cleaning equipment.", image: cleaningImg },
+  {
+    title: "Office Furniture & Stationery",
+    description:
+      "Modern office desks, chairs, cabinets, and everyday office supplies.",
+    image: officeImg,
+  },
+  {
+    title: "IT Equipment",
+    description:
+      "Computers, printers, networking equipment, and office technology solutions.",
+    image: itImg,
+  },
+  {
+    title: "Food Supplies",
+    description:
+      "Beans, rice, kapenta, soya beans, and other essential food products.",
+    image: foodImg,
+  },
+  {
+    title: "Cleaning Supplies",
+    description:
+      "Mops, brooms, detergents, disinfectants, and cleaning equipment.",
+    image: cleaningImg,
+  },
 ];
 
 const Index = () => {
@@ -28,7 +64,11 @@ const Index = () => {
       {/* Hero */}
       <section className="relative min-h-[85vh] flex items-center">
         <div className="absolute inset-0">
-          <img src={heroImg} alt="Grainmond warehouse" className="w-full h-full object-cover" />
+          <img
+            src={heroImg}
+            alt="Grainmond warehouse"
+            className="w-full h-full object-cover"
+          />
           <div className="absolute inset-0 gradient-hero opacity-80" />
         </div>
         <div className="container relative z-10 py-20">
@@ -36,14 +76,32 @@ const Index = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground mb-6 animate-fade-in-up">
               Reliable Supplies for Businesses in Zambia
             </h1>
-            <p className="text-lg text-primary-foreground/85 mb-8 leading-relaxed animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
-              Grainmond General Dealers supplies quality products to businesses, institutions, and organizations. From office furniture and IT equipment to food supplies and cleaning materials, we provide dependable solutions you can trust.
+            <p
+              className="text-lg text-primary-foreground/85 mb-8 leading-relaxed animate-fade-in-up"
+              style={{ animationDelay: "0.15s" }}
+            >
+              Grainmond General Dealers supplies quality products to businesses,
+              institutions, and organizations. From office furniture and IT
+              equipment to food supplies and cleaning materials, we provide
+              dependable solutions you can trust.
             </p>
-            <div className="flex flex-wrap gap-4 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-              <Button asChild size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-semibold">
+            <div
+              className="flex flex-wrap gap-4 animate-fade-in-up"
+              style={{ animationDelay: "0.3s" }}
+            >
+              <Button
+                asChild
+                size="lg"
+                className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-semibold"
+              >
                 <Link to="/products">View Products</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-primary-foreground/10"
+              >
                 <Link to="/contact">Contact Us</Link>
               </Button>
             </div>
@@ -63,7 +121,9 @@ const Index = () => {
                 <div className="w-14 h-14 rounded-full bg-secondary/15 flex items-center justify-center mx-auto mb-4">
                   <f.icon size={26} className="text-secondary" />
                 </div>
-                <h3 className="font-heading font-semibold text-lg text-foreground mb-2">{f.title}</h3>
+                <h3 className="font-heading font-semibold text-lg text-foreground mb-2">
+                  {f.title}
+                </h3>
                 <p className="text-muted-foreground text-sm">{f.text}</p>
               </div>
             ))}
@@ -78,7 +138,8 @@ const Index = () => {
             Our Products
           </h2>
           <p className="text-muted-foreground text-center mb-12 max-w-xl mx-auto">
-            A selection of our product categories — we supply everything your business needs.
+            A selection of our product categories — we supply everything your
+            business needs.
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {previewProducts.map((p) => (
@@ -86,7 +147,11 @@ const Index = () => {
             ))}
           </div>
           <div className="text-center mt-10">
-            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+            <Button
+              asChild
+              size="lg"
+              className="bg-primary text-primary-foreground hover:bg-primary/90"
+            >
               <Link to="/products">View All Products</Link>
             </Button>
           </div>
@@ -102,7 +167,11 @@ const Index = () => {
           <p className="text-primary-foreground/80 mb-8 max-w-lg mx-auto">
             Contact us today to learn more about our products and services.
           </p>
-          <Button asChild size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-semibold">
+          <Button
+            asChild
+            size="lg"
+            className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-semibold"
+          >
             <Link to="/contact">Get in Touch</Link>
           </Button>
         </div>
