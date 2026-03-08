@@ -1,15 +1,16 @@
 import { MapPin, Phone, Mail, Facebook } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import FAQAccordion from "@/components/Faq";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const mailto = `mailto:grainmondsupliers@gmail.com?subject=Inquiry from ${form.name}&body=${encodeURIComponent(form.message)}%0A%0AFrom: ${form.name} (${form.email})`;
-    window.open(mailto);
-  };
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   const mailto = `mailto:musongoletracy@gmail.com?subject=Inquiry from ${form.name}&body=${encodeURIComponent(form.message)}%0A%0AFrom: ${form.name} (${form.email})`;
+  //   window.open(mailto);
+  // };
 
   return (
     <div>
@@ -71,12 +72,18 @@ const Contact = () => {
                   <div className="w-10 h-10 rounded-full bg-secondary/15 flex items-center justify-center shrink-0">
                     <Mail size={20} className="text-secondary" />
                   </div>
-                  <div>
+                  <div className="flex flex-col">
                     <h4 className="font-semibold text-foreground mb-1">
                       Email
                     </h4>
                     <a
                       href="mailto:grainmondsupliers@gmail.com"
+                      className="text-secondary text-sm hover:underline"
+                    >
+                      info@grainmond.com
+                    </a>
+                    <a
+                      href="mailto:info@grainmond.com"
                       className="text-secondary text-sm hover:underline"
                     >
                       grainmondsupliers@gmail.com
@@ -105,13 +112,19 @@ const Contact = () => {
               <h3 className="font-heading font-bold text-xl text-foreground mb-6">
                 Send us a Message
               </h3>
-              <form onSubmit={handleSubmit} className="space-y-5">
+              <form
+                target="_blank"
+                action="https://formsubmit.co/f46556edd6664747fac78ac35d48d3c3"
+                method="POST"
+                className="space-y-5"
+              >
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-1.5">
                     Name
                   </label>
                   <input
                     type="text"
+                    name="name"
                     required
                     value={form.name}
                     onChange={(e) => setForm({ ...form, name: e.target.value })}
@@ -125,6 +138,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="email"
+                    name="email"
                     required
                     value={form.email}
                     onChange={(e) =>
@@ -140,6 +154,7 @@ const Contact = () => {
                   </label>
                   <textarea
                     required
+                    name="message"
                     rows={5}
                     value={form.message}
                     onChange={(e) =>
@@ -159,6 +174,12 @@ const Contact = () => {
               </form>
             </div>
           </div>
+        </div>
+        <div className="pb-6 md:pt-16 pt-8 mx-auto">
+          <h3 className="text-center md:text-4xl sm:text-2xl text-xl py-4">
+            Our Frequently asked questions
+          </h3>
+          <FAQAccordion />
         </div>
       </section>
     </div>

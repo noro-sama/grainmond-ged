@@ -68,6 +68,7 @@ const Index = () => {
             src={heroImg}
             alt="Grainmond warehouse"
             className="w-full h-full object-cover"
+            loading="lazy"
           />
           <div className="absolute inset-0 gradient-hero opacity-80" />
         </div>
