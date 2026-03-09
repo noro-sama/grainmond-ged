@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail } from "lucide-react";
 
 const Footer = () => (
-  <footer className="gradient-hero text-primary-foreground">
+  <footer className="gradient-light text-primary-foreground">
     <div className="container py-16">
       <div className="grid md:grid-cols-3 gap-12">
         <div>
@@ -13,7 +13,9 @@ const Footer = () => (
         </div>
 
         <div>
-          <h4 className="font-heading font-semibold text-lg mb-4">Quick Links</h4>
+          <h4 className="font-heading font-semibold text-lg mb-4">
+            Quick Links
+          </h4>
           <nav className="space-y-2">
             {[
               { label: "Home", to: "/" },
@@ -34,7 +36,9 @@ const Footer = () => (
         </div>
 
         <div>
-          <h4 className="font-heading font-semibold text-lg mb-4">Contact Info</h4>
+          <h4 className="font-heading font-semibold text-lg mb-4">
+            Contact Info
+          </h4>
           <div className="space-y-3 text-sm text-primary-foreground/80">
             <div className="flex items-start gap-2">
               <MapPin size={16} className="mt-0.5 shrink-0" />
@@ -50,7 +54,10 @@ const Footer = () => (
             </div>
             <div className="flex items-start gap-2">
               <Mail size={16} className="mt-0.5 shrink-0" />
-              <a href="mailto:grainmondsupliers@gmail.com" className="hover:text-secondary transition-colors">
+              <a
+                href="mailto:grainmondsupliers@gmail.com"
+                className="hover:text-secondary transition-colors"
+              >
                 grainmondsupliers@gmail.com
               </a>
             </div>
@@ -59,7 +66,8 @@ const Footer = () => (
       </div>
 
       <div className="border-t border-primary-foreground/20 mt-12 pt-6 text-center text-xs text-primary-foreground/50">
-        © {new Date().getFullYear()} Grainmond General Dealers. All rights reserved.
+        © {new Date().getFullYear()} Grainmond General Dealers. All rights
+        reserved.
       </div>
     </div>
   </footer>

@@ -34,7 +34,7 @@ const About = () => (
           alt="Grainmond team"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 gradient-hero opacity-85" />
+        <div className="absolute inset-0 gradient-light opacity-65" />
       </div>
       <div className="container relative z-10 text-center">
         <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-4  animate-fade-in-up">

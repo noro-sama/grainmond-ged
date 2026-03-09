@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Shield, Package, Users, Handshake } from "lucide-react";
-import heroImg from "@/assets/hero-warehouse.jpg";
+import heroImg from "@/assets/room-full-of-computers.jpg";
 import officeImg from "@/assets/product-office.jpg";
 import itImg from "@/assets/product-it.jpg";
 import foodImg from "@/assets/product-food.jpg";
@@ -66,11 +66,11 @@ const Index = () => {
         <div className="absolute inset-0">
           <img
             src={heroImg}
-            alt="Grainmond warehouse"
+            alt="Room full of computers"
             className="w-full h-full object-cover"
             loading="lazy"
           />
-          <div className="absolute inset-0 gradient-hero opacity-80" />
+          <div className="absolute inset-0 gradient-light opacity-35" />
         </div>
         <div className="container relative z-10 py-20">
           <div className="max-w-2xl">
@@ -160,7 +160,7 @@ const Index = () => {
       </section>
 
       {/* CTA */}
-      <section className="gradient-hero py-16">
+      <section className="bg-primary py-16">
         <div className="container text-center">
           <h2 className="text-3xl font-heading font-bold text-primary-foreground mb-4">
             Ready to Work With Us?

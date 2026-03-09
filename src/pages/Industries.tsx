@@ -42,7 +42,7 @@ const industries = [
 
 const Industries = () => (
   <div>
-    <section className="gradient-hero py-24">
+    <section className="gradient-light py-24">
       <div className="container text-center">
         <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-4  animate-fade-in-up">
           Industries We Serve
