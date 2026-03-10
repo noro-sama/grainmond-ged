@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Shield, Package, Users, Handshake } from "lucide-react";
-import heroImg from "@/assets/room-full-of-computers.jpg";
+import heroImg from "@/assets/hero-warehouse.jpg";
 import officeImg from "@/assets/product-office.jpg";
 import itImg from "@/assets/product-it.jpg";
 import foodImg from "@/assets/product-food.jpg";
@@ -66,11 +66,11 @@ const Index = () => {
         <div className="absolute inset-0">
           <img
             src={heroImg}
-            alt="Room full of computers"
+            alt="grainmond warehouse"
             className="w-full h-full object-cover"
             loading="lazy"
           />
-          <div className="absolute inset-0 gradient-light opacity-35" />
+          <div className="absolute inset-0 gradient-light opacity-55" />
         </div>
         <div className="container relative z-10 py-20">
           <div className="max-w-2xl">
@@ -78,7 +78,7 @@ const Index = () => {
               Reliable Supplies for Businesses in Zambia
             </h1>
             <p
-              className="text-lg text-primary-foreground/85 mb-8 leading-relaxed animate-fade-in-up"
+              className="text-lg text-primary-foreground mb-8 leading-relaxed animate-fade-in-up"
               style={{ animationDelay: "0.15s" }}
             >
               Grainmond General Dealers supplies quality products to businesses,
